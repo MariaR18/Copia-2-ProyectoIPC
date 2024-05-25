@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panel5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pantallas_cat.Añadir_gasto_2Controller">
+   <children>
+      <HBox alignment="TOP_RIGHT" layoutY="23.0" prefHeight="54.0" prefWidth="638.0">
+         <children>
+            <Label text="Introduce Los Datos Solicitados:" textFill="#9c6eb5">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" prefHeight="54.0" prefWidth="102.0">
+               <children>
+                  <Button fx:id="log_out" mnemonicParsing="false" onAction="#log_out_">
+                     <graphic>
+                        <ImageView fx:id="imagen_usuario" fitHeight="52.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/Icono_persona_morado.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <GridPane layoutX="62.0" layoutY="98.0" prefHeight="272.0" prefWidth="512.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.2" minWidth="10.0" prefWidth="231.8000274658203" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.5999755859375" minWidth="10.0" prefWidth="59.40003662109376" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.39998779296877" minWidth="10.0" prefWidth="229.79996337890628" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="144.60001220703126" minHeight="10.0" prefHeight="68.99998779296875" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="228.59998168945313" minHeight="10.0" prefHeight="71.20000000000002" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="228.59998168945313" minHeight="10.0" prefHeight="88.60003662109375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="228.59998168945313" minHeight="10.0" prefHeight="43.799963378906256" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Coste:" />
+                  <TextField fx:id="cosye_txt" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Fecha:" />
+                  <TextField fx:id="fecha_txt" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+               <children>
+                  <Label text="Categoría:" />
+                  <ChoiceBox fx:id="elegir_cat" prefHeight="26.0" prefWidth="236.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="79.0" prefWidth="174.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Descripción:" />
+                  <TextArea fx:id="descrip_txt" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+               <children>
+                  <Label text="Título:" />
+                  <TextField fx:id="titulo_txt" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fx:id="imagen" fitHeight="85.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="seleccion_img" mnemonicParsing="false" onAction="#seleccionar_imagen" text="SELECCIÓNAR IMAGEN" />
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+      <Button fx:id="atras_btn" layoutX="372.0" layoutY="393.0" mnemonicParsing="false" onAction="#vuelve_atras" text="ATRÁS" />
+      <Button fx:id="aceptar_btn" layoutX="508.0" layoutY="393.0" mnemonicParsing="false" onAction="#acepta" text="ACEPTAR" />
+   </children>
+</Pane>

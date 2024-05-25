@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="PANEL3" prefHeight="633.0" prefWidth="1090.0" style="-fx-background-color: #E8D3F3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pantalla_2.AñadirGastoController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutY="14.0" prefHeight="63.0" prefWidth="1090.0" style="-fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="403.0">
+               <children>
+                  <Button fx:id="editar" mnemonicParsing="false" onAction="#editarperfil" text="EDITAR PERFIL">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Text fill="#9c6eb5" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualización De Gastos" wrappingWidth="315.7957458496094">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Text>
+            <VBox alignment="TOP_RIGHT" prefHeight="63.0" prefWidth="359.0">
+               <children>
+                  <Button fx:id="log_out" mnemonicParsing="false" onAction="#log_out_">
+                     <graphic>
+                        <ImageView fx:id="IMAGEN_PERFIL" fitHeight="55.0" fitWidth="55.0" onMouseClicked="#LOG_OUT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/Icono_persona_morado.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TableView fx:id="TABLA" layoutX="17.0" layoutY="99.0" prefHeight="477.0" prefWidth="912.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="55.19997787475586" text="ID" />
+          <TableColumn fx:id="NOMBRE" prefWidth="118.4000244140625" text="Nombre" />
+            <TableColumn fx:id="DESCRIPCION" prefWidth="191.2000274658203" text="Descripción" />
+            <TableColumn fx:id="COSTE" prefWidth="101.5999755859375" text="Coste" />
+            <TableColumn fx:id="UNIDADES" prefWidth="60.79998779296875" text="Unidades" />
+            <TableColumn fx:id="CATEGORIA" prefWidth="139.20001220703125" text="Categoría" />
+            <TableColumn fx:id="FECHA" prefWidth="93.60003662109375" text="Fecha" />
+            <TableColumn fx:id="IMAGEN" prefWidth="151.20001220703125" text="Imagen" />
+        </columns>
+      </TableView>
+      <Button fx:id="ATRAS" layoutX="951.0" layoutY="551.0" mnemonicParsing="false" onAction="#volver" text="VOLVER ATRÁS" />
+      <VBox alignment="CENTER" layoutX="946.0" layoutY="148.0" prefHeight="126.0" prefWidth="130.0">
+         <children>
+            <Button fx:id="añadir_gasto" mnemonicParsing="false" onAction="#anyade_gasto" text="AÑADIR GASTO" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="eliminar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#eliminar_gasto" text="ELIMINAR">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="editar" contentDisplay="CENTER" mnemonicParsing="false" onAction="#editar_gasto" text="EDITAR" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

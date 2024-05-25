@@ -1,0 +1,63 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 17 may 2024, 12:14:59
+    Author     : 4444a
+*/
+.background cosas{
+    -fx-background-color: #E8D3F3; /*color lila fondo*/
+    -fx-background-color: white; 
+    -fx-background-color: null;
+}
+
+.Pane{
+   -fx-background-color: #E8D3F3; 
+}
+
+.HBox{
+    -fx-background-color: white;
+}
+
+.gridPane{
+    -fx-background-color: white;
+}
+
+.button{
+    -fx-font-weight: bold;
+    -fx-background-color: #9c6eb5; /*color morado fondo para texto*/
+    -fx-padding: 5 10 5 10;
+    -fx-border-radius: 30;
+    -fx-border-width: 2;
+    -fx-text-fill: white;
+    -fx-font-family: "System";
+    -fx-background-radius: 20%;
+}
+
+.button:hover {
+    -fx-background-color: purple;
+}
+
+#VOLVER_A:hover{
+    -fx-background-color: #990033;
+}
+
+#REGRESAR:hover{
+    -fx-background-color: #990033;
+}
+
+#ATRAS:hover{
+    -fx-background-color: #990033; 
+}
+#volver_atras:hover{
+    -fx-background-color: #990033; 
+}
+
+#log_out{
+    -fx-background-color: null;
+}
+
+#log_out:hover{
+    -fx-background-color: #d5dffd; 
+}
